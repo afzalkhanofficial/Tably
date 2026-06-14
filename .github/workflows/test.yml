@@ -29,6 +29,7 @@ jobs:
         run: |
           cd backend
           pip install -r requirements.txt
+          pip install pytest pytest-django
       - name: Run tests
         env:
           DATABASE_URL: postgresql://postgres:postgres@localhost/test_flatmates
@@ -36,4 +37,5 @@ jobs:
           DJANGO_SETTINGS_MODULE: config.settings.development
         run: |
           cd backend
-          python manage.py test tests/ -v 2
+          pytest
+
