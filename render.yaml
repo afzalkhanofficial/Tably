@@ -1,0 +1,37 @@
+# This file lets you deploy with one click via Render's Blueprint feature:
+# Dashboard → New → Blueprint → select this repo → Render reads this file
+# and provisions the web service automatically.
+#
+# NOTE: We deliberately do NOT declare a `databases:` block here.
+# The database lives on Supabase (see "Supabase Setup Steps" below),
+# not on Render. DATABASE_URL is set manually as a Render env var
+# pointing at the Supabase connection string. This keeps the database
+# independent of the Render service's lifecycle — if you ever delete
+# or recreate the Render service, the data is untouched.
+
+services:
+  - type: web
+    name: flatmates-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 60"
+    healthCheckPath: /api/health/
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.production
+      - key: SECRET_KEY
+        generateValue: true          # Render auto-generates a strong secret
+      - key: DATABASE_URL
+        sync: false                  # Paste the Supabase connection string manually
+      - key: DB_CONN_MAX_AGE
+        value: "0"                   # 0 = required for Supabase's pooled connection (see below)
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false                  # Set manually after Vercel URL is known
+      - key: CSRF_TRUSTED_ORIGINS
+        sync: false                  # Same — set after Vercel URL is known
+      - key: WEB_CONCURRENCY
+        value: 2
