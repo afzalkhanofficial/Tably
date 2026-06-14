@@ -1,4 +1,15 @@
 """
+LIVE INTERVIEW GUIDE:
+To trace Rohan's balance:
+1. GET /api/groups/1/debug/balance-trace/2/
+2. Each step shows one expense and its effect
+3. The running_balance column shows cumulative effect
+4. Settlements appear at the end and reduce balance
+5. If you see a March expense affecting Sam (user 5), that is a bug.
+   Sam joined 2026-04-08. Check GroupMember.is_active_on(date).
+"""
+
+"""
 Balance Calculation Engine
 ==========================
 

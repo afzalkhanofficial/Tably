@@ -1,4 +1,28 @@
 """
+ANOMALY QUICK REFERENCE (CSV row → anomaly type):
+Row 6:  EXACT_DUPLICATE      (Marina Bites, same as Row 5)
+Row 7:  AMOUNT_FORMAT        ("1,200" → 1200)
+Row 9:  NAME_FUZZY_MATCH     ("priya" → Priya)
+Row 11: NAME_FUZZY_MATCH     ("Priya S" → Priya)
+Row 13: MISSING_PAID_BY      (House cleaning, blank payer)
+Row 14: SETTLEMENT_PATTERN   ("paid back" keyword)
+Row 15: PERCENTAGE_SUM_ERROR (30+30+30+20 = 110%)
+Row 20: FOREIGN_CURRENCY     (USD 540 → INR)
+Row 23: UNKNOWN_MEMBER       (Dev's friend Kabir)
+Row 24: CONFLICTING_DUPLICATE(Thalassa, ₹2400, w/ Row 25)
+Row 25: CONFLICTING_DUPLICATE(Thalassa, ₹2450, w/ Row 24)
+Row 26: NEGATIVE_AMOUNT      (-30 USD refund)
+Row 27: NONSTANDARD_DATE     ("Mar-14")
+Row 28: MISSING_CURRENCY     (blank currency → INR)
+Row 31: ZERO_AMOUNT          (₹0 Swiggy)
+Row 34: AMBIGUOUS_DATE       (04-05-2026)
+Row 36: MEMBER_POST_DEPARTURE(Meera in April, left March)
+Row 38: SETTLEMENT_PATTERN   (deposit share)
+Row 42: SPLIT_TYPE_CONFLICT  (equal + share details)
+Row 10: DECIMAL_PRECISION    (899.995)
+"""
+
+"""
 Anomaly Detector — checks every CSV row for data quality issues.
 =================================================================
 

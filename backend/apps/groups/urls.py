@@ -9,6 +9,7 @@ from apps.groups.views import (
     GroupListCreateView,
     GroupMemberDepartView,
     GroupMemberListCreateView,
+    GroupBalanceTraceView,
 )
 
 app_name = 'groups'
@@ -25,4 +26,7 @@ urlpatterns = [
 
     # Mark Member Departed
     path('groups/<int:pk>/members/<int:user_id>/', GroupMemberDepartView.as_view(), name='group-member-depart'),
+
+    # Debug Balance Trace
+    path('groups/<int:id>/debug/balance-trace/<int:user_id>/', GroupBalanceTraceView.as_view(), name='group-balance-trace'),
 ]

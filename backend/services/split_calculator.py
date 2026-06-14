@@ -1,3 +1,12 @@
+"""
+SPLIT TYPE EXAMPLES FROM THE CSV:
+- equal: February rent ₹48000 ÷ 4 people = ₹12000 each
+- unequal: Birthday cake: Rohan ₹700 + Priya ₹400 + Meera ₹400 = ₹1500
+- percentage: Weekend brunch: Aisha 30%+Rohan 30%+Priya 30%+Meera 10% (fixed)
+- share: Scooter rentals ₹3600: Aisha(1)+Rohan(2)+Priya(1)+Dev(2)=6 shares
+          Per share = ₹600. Rohan = ₹1200, Dev = ₹1200, others = ₹600
+"""
+
 from decimal import Decimal, ROUND_HALF_UP
 
 class SplitCalculator:
