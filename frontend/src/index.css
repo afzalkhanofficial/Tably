@@ -3,17 +3,18 @@
 body {
   margin: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #f9fafb; /* gray-50 */
-  color: #111827; /* gray-900 */
+  background-color: #0b0f19; /* Spreetail deep dark background */
+  color: #cbd5e1; /* slate-300 light text */
 }
 
-/* Screen reader skip navigation link */
+/* Screen reader skip navigation link - match Spreetail brand green */
 .skip-link {
   position: absolute;
   top: -40px;
   left: 0;
-  background: #6d28d9;
-  color: white;
+  background: #00DF9A;
+  color: #0b0f19;
+  font-weight: bold;
   padding: 8px;
   z-index: 100;
   transition: top 0.2s;
@@ -22,3 +23,118 @@ body {
 .skip-link:focus {
   top: 0;
 }
+
+/* --- Redesign existing Tailwind layout classes into dark mode --- */
+
+/* Override white container cards & forms */
+.bg-white {
+  background-color: #111625 !important;
+}
+
+/* Override light page backgrounds */
+.bg-gray-50 {
+  background-color: #0b0f19 !important;
+}
+
+/* Override light gray table headers or secondary cards */
+.bg-gray-100 {
+  background-color: #1b2030 !important;
+}
+
+/* Override grey hover/active list item states */
+.bg-gray-200 {
+  background-color: #262e45 !important;
+}
+
+/* Override light grey borders */
+.border-gray-100,
+.border-gray-200,
+.border-gray-300 {
+  border-color: #1e293b !important;
+}
+
+/* Override text headings */
+.text-gray-900,
+.text-gray-800 {
+  color: #ffffff !important;
+}
+
+/* Override description/body text */
+.text-gray-700,
+.text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+/* Override labels and secondary captions */
+.text-gray-500,
+.text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+/* Redesign Form inputs to look premium and dark */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  background-color: #1a2030 !important;
+  color: #ffffff !important;
+  border-color: #2d3748 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00DF9A !important;
+  box-shadow: 0 0 0 1px #00DF9A !important;
+}
+
+/* Make primary buttons have dark text for premium contrast (like Spreetail site) */
+.bg-indigo-600,
+.bg-indigo-500,
+.bg-indigo-700 {
+  color: #0b0f19 !important;
+  font-weight: 700 !important;
+}
+
+.bg-indigo-600:hover,
+.bg-indigo-500:hover,
+.bg-indigo-700:hover {
+  background-color: #00c58d !important;
+}
+
+/* Style details container badge */
+.bg-indigo-50 {
+  background-color: #022c22 !important;
+  color: #00DF9A !important;
+  border-color: #007352 !important;
+}
+
+/* Anomaly containers */
+.bg-rose-50 {
+  background-color: #2c0e12 !important;
+  border-color: #ef4444 !important;
+  color: #fca5a5 !important;
+}
+
+.bg-amber-50 {
+  background-color: #2d1e10 !important;
+  border-color: #f59e0b !important;
+  color: #fde047 !important;
+}
+
+.bg-emerald-50 {
+  background-color: #052e16 !important;
+  border-color: #10b981 !important;
+  color: #a7f3d0 !important;
+}
+
+/* Make sure avatars stand out nicely */
+.bg-indigo-100 {
+  background-color: #1a2030 !important;
+  color: #00DF9A !important;
+}
+
