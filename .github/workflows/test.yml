@@ -1,0 +1,39 @@
+name: Django Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_flatmates
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt
+      - name: Run tests
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost/test_flatmates
+          SECRET_KEY: test-secret-key
+          DJANGO_SETTINGS_MODULE: config.settings.development
+        run: |
+          cd backend
+          python manage.py test tests/ -v 2
