@@ -7,18 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        indigo: {
-          50: '#e6fff6',
-          100: '#b3ffd9',
-          200: '#80ffbc',
-          300: '#4dff9f',
-          400: '#1aff82',
-          500: '#00DF9A', // Spreetail Main Accent Turquoise/Green
-          600: '#00c58d', // Darker green/teal hover state
-          700: '#00996d',
-          800: '#007352',
-          900: '#004c36',
-          950: '#00261b',
+        primary: {
+          50: '#f5f3ff',
+          100: '#ede9fe',
+          200: '#ddd6fe',
+          300: '#c4b5fd',
+          400: '#a78bfa',
+          500: '#8b5cf6',
+          600: '#7c3aed',
+          700: '#6d28d9',
+          800: '#5b21b6',
+          900: '#4c1d95',
+          950: '#2e1065',
         },
       },
     },
