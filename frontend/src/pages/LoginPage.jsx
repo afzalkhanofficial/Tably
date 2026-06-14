@@ -136,10 +136,11 @@ export default function LoginPage() {
             Demo Credentials Hint
           </p>
           <code className="text-xs text-indigo-700 bg-indigo-50 px-2 py-1 rounded font-mono">
-            aisha@test.com / test123
+            aisha@flat.com / flatmate123
           </code>
         </div>
       </div>
     </main>
+
   );
 }
