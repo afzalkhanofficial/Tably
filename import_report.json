@@ -1,0 +1,2226 @@
+{
+  "session": {
+    "id": 3,
+    "filename": "Expenses_Export.csv",
+    "group": 1,
+    "imported_by": 1,
+    "imported_at": "2026-06-14T17:18:26.399515+05:30",
+    "status": "pending_review",
+    "total_rows": 42,
+    "auto_imported_count": 7,
+    "auto_fixed_count": 6,
+    "pending_review_count": 28,
+    "skipped_count": 1
+  },
+  "anomalies": {
+    "total": 48,
+    "resolved": 15,
+    "unresolved": 33,
+    "items": [
+      {
+        "id": 97,
+        "row_number": 2,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '01-02-2026' is ambiguous. Could be 2026-02-01 (DD-MM) or 2026-01-02 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "01-02-2026",
+          "notes": "",
+          "amount": "48000",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "February rent",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-01",
+          "option_b": "2026-01-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-01",
+            "notes": "",
+            "amount": "48000",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "48000",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "February rent",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 98,
+        "row_number": 3,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '03-02-2026' is ambiguous. Could be 2026-02-03 (DD-MM) or 2026-03-02 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "03-02-2026",
+          "notes": "",
+          "amount": "2340",
+          "paid_by": "Priya",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Groceries BigBasket",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-03",
+          "option_b": "2026-03-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-03",
+            "notes": "",
+            "amount": "2340",
+            "paid_by": "Priya",
+            "currency": "INR",
+            "amount_inr": "2340",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Groceries BigBasket",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 99,
+        "row_number": 4,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '05-02-2026' is ambiguous. Could be 2026-02-05 (DD-MM) or 2026-05-02 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "05-02-2026",
+          "notes": "",
+          "amount": "1199",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Wifi bill Feb",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-05",
+          "option_b": "2026-05-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-05",
+            "notes": "",
+            "amount": "1199",
+            "paid_by": "Rohan",
+            "currency": "INR",
+            "amount_inr": "1199",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Wifi bill Feb",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 100,
+        "row_number": 5,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '08-02-2026' is ambiguous. Could be 2026-02-08 (DD-MM) or 2026-08-02 (MM-DD). Note on row: 'Dev visiting for the weekend'",
+        "raw_row_data": {
+          "date": "08-02-2026",
+          "notes": "Dev visiting for the weekend",
+          "amount": "3200",
+          "paid_by": "Dev",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Dinner at Marina Bites",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-08",
+          "option_b": "2026-08-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-08",
+            "notes": "Dev visiting for the weekend",
+            "amount": "3200",
+            "paid_by": "Dev",
+            "currency": "INR",
+            "amount_inr": "3200",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Dinner at Marina Bites",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 102,
+        "row_number": 6,
+        "anomaly_type": "EXACT_DUPLICATE",
+        "description": "Exact duplicate of row 5 (same date, description, amount, payer). Row 5 is kept. This row requires approval to skip.",
+        "raw_row_data": {
+          "date": "08-02-2026",
+          "notes": "",
+          "amount": "3200",
+          "paid_by": "Dev",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "dinner - marina bites",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "keep_row": 5,
+          "skip_row": 6
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-08",
+            "notes": "",
+            "amount": "3200",
+            "paid_by": "Dev",
+            "currency": "INR",
+            "amount_inr": "3200",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "dinner - marina bites",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 101,
+        "row_number": 6,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '08-02-2026' is ambiguous. Could be 2026-02-08 (DD-MM) or 2026-08-02 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "08-02-2026",
+          "notes": "",
+          "amount": "3200",
+          "paid_by": "Dev",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "dinner - marina bites",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-08",
+          "option_b": "2026-08-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-08",
+            "notes": "",
+            "amount": "3200",
+            "paid_by": "Dev",
+            "currency": "INR",
+            "amount_inr": "3200",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "dinner - marina bites",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 104,
+        "row_number": 7,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '10-02-2026' is ambiguous. Could be 2026-02-10 (DD-MM) or 2026-10-02 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "10-02-2026",
+          "notes": "",
+          "amount": "1,200",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Electricity Feb",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-10",
+          "option_b": "2026-10-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-10",
+            "notes": "",
+            "amount": "1200",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "1200",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Electricity Feb",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 103,
+        "row_number": 7,
+        "anomaly_type": "AMOUNT_FORMAT",
+        "description": "Amount '1,200' contained formatting characters. Auto-corrected to '1200'.",
+        "raw_row_data": {
+          "date": "10-02-2026",
+          "notes": "",
+          "amount": "1,200",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Electricity Feb",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 105,
+        "row_number": 8,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '12-02-2026' is ambiguous. Could be 2026-02-12 (DD-MM) or 2026-12-02 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "12-02-2026",
+          "notes": "",
+          "amount": "3000",
+          "paid_by": "Meera",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Maid salary Feb",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-02-12",
+          "option_b": "2026-12-02"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-12",
+            "notes": "",
+            "amount": "3000",
+            "paid_by": "Meera",
+            "currency": "INR",
+            "amount_inr": "3000",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Maid salary Feb",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 106,
+        "row_number": 9,
+        "anomaly_type": "NAME_FUZZY_MATCH",
+        "description": "Payer name 'priya' did not exactly match any member. Auto-matched to 'Priya' (fuzzy match >= 60%). Original preserved.",
+        "raw_row_data": {
+          "date": "14-02-2026",
+          "notes": "Meera skipped",
+          "amount": "640",
+          "paid_by": "priya",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya",
+          "description": "Movie night snacks",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 107,
+        "row_number": 10,
+        "anomaly_type": "DECIMAL_PRECISION",
+        "description": "Amount 899.995 has 3 decimal places. Rounded to 900.00.",
+        "raw_row_data": {
+          "date": "15-02-2026",
+          "notes": "",
+          "amount": "899.995",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Cylinder refill",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 108,
+        "row_number": 11,
+        "anomaly_type": "NAME_FUZZY_MATCH",
+        "description": "Payer name 'Priya S' did not exactly match any member. Auto-matched to 'Priya' (fuzzy match >= 60%). Original preserved.",
+        "raw_row_data": {
+          "date": "18-02-2026",
+          "notes": "",
+          "amount": "1875",
+          "paid_by": "Priya S",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Groceries DMart",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 109,
+        "row_number": 13,
+        "anomaly_type": "MISSING_PAID_BY",
+        "description": "'House cleaning supplies' has no payer. Notes: 'can't remember who paid'. Cannot calculate balances without a payer.",
+        "raw_row_data": {
+          "date": "22-02-2026",
+          "notes": "can't remember who paid",
+          "amount": "780",
+          "paid_by": "",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "House cleaning supplies",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "options": [
+            "Aisha",
+            "Rohan",
+            "Priya",
+            "Meera",
+            "Sam",
+            "Dev"
+          ]
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-22",
+            "notes": "can't remember who paid",
+            "amount": "780",
+            "paid_by": "",
+            "currency": "INR",
+            "amount_inr": "780",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "House cleaning supplies",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 110,
+        "row_number": 14,
+        "anomaly_type": "SETTLEMENT_PATTERN",
+        "description": "'Rohan paid Aisha back' appears to be a settlement/payment, not a shared expense. Will import as Settlement record, not Expense.",
+        "raw_row_data": {
+          "date": "25-02-2026",
+          "notes": "this is a settlement not an expense??",
+          "amount": "5000",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "",
+          "split_with": "Aisha",
+          "description": "Rohan paid Aisha back",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "import_as": "settlement"
+        },
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 111,
+        "row_number": 15,
+        "anomaly_type": "PERCENTAGE_SUM_ERROR",
+        "description": "Percentages sum to 110%, not 100%. Details: 'Aisha 30%; Rohan 30%; Priya 30%; Meera 20%'. Cannot auto-correct — different fixes (scale vs reassign) would produce different results. Manual review required.",
+        "raw_row_data": {
+          "date": "28-02-2026",
+          "notes": "percentages might be off",
+          "amount": "1440",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "percentage",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Pizza Friday",
+          "split_details": "Aisha 30%; Rohan 30%; Priya 30%; Meera 20%"
+        },
+        "suggested_fix": {
+          "options": [
+            "scale_to_100",
+            "manual_edit"
+          ],
+          "current_sum": 110,
+          "raw_details": "Aisha 30%; Rohan 30%; Priya 30%; Meera 20%"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-02-28",
+            "notes": "percentages might be off",
+            "amount": "1440",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "1440",
+            "split_type": "percentage",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Pizza Friday",
+            "split_details": "Aisha 30%; Rohan 30%; Priya 30%; Meera 20%"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 112,
+        "row_number": 16,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '01-03-2026' is ambiguous. Could be 2026-03-01 (DD-MM) or 2026-01-03 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "01-03-2026",
+          "notes": "",
+          "amount": "48000",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "March rent",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-01",
+          "option_b": "2026-01-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-01",
+            "notes": "",
+            "amount": "48000",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "48000",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "March rent",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 113,
+        "row_number": 18,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '05-03-2026' is ambiguous. Could be 2026-03-05 (DD-MM) or 2026-05-03 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "05-03-2026",
+          "notes": "",
+          "amount": "1199",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Wifi bill Mar",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-05",
+          "option_b": "2026-05-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-05",
+            "notes": "",
+            "amount": "1199",
+            "paid_by": "Rohan",
+            "currency": "INR",
+            "amount_inr": "1199",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Wifi bill Mar",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 114,
+        "row_number": 19,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '08-03-2026' is ambiguous. Could be 2026-03-08 (DD-MM) or 2026-08-03 (MM-DD). Note on row: 'trip starts!'",
+        "raw_row_data": {
+          "date": "08-03-2026",
+          "notes": "trip starts!",
+          "amount": "32400",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Goa flights",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-08",
+          "option_b": "2026-08-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-08",
+            "notes": "trip starts!",
+            "amount": "32400",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "32400",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Goa flights",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 116,
+        "row_number": 20,
+        "anomaly_type": "FOREIGN_CURRENCY",
+        "description": "USD 540 converted to INR 49842.00 using rate USD/INR = 92.3 on 2026-03-09.",
+        "raw_row_data": {
+          "date": "09-03-2026",
+          "notes": "booked on intl site",
+          "amount": "540",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Goa villa booking",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 115,
+        "row_number": 20,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '09-03-2026' is ambiguous. Could be 2026-03-09 (DD-MM) or 2026-09-03 (MM-DD). Note on row: 'booked on intl site'",
+        "raw_row_data": {
+          "date": "09-03-2026",
+          "notes": "booked on intl site",
+          "amount": "540",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Goa villa booking",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-09",
+          "option_b": "2026-09-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-09",
+            "notes": "booked on intl site",
+            "amount": "540",
+            "paid_by": "Dev",
+            "currency": "USD",
+            "amount_inr": "49842.00",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Goa villa booking",
+            "split_details": "",
+            "exchange_rate_date": "2026-03-09",
+            "exchange_rate_used": "92.3"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 117,
+        "row_number": 21,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '10-03-2026' is ambiguous. Could be 2026-03-10 (DD-MM) or 2026-10-03 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "10-03-2026",
+          "notes": "",
+          "amount": "84",
+          "paid_by": "Rohan",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Beach shack lunch",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-10",
+          "option_b": "2026-10-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-10",
+            "notes": "",
+            "amount": "84",
+            "paid_by": "Rohan",
+            "currency": "USD",
+            "amount_inr": "7724.64",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Beach shack lunch",
+            "split_details": "",
+            "exchange_rate_date": "2026-03-10",
+            "exchange_rate_used": "91.96"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 118,
+        "row_number": 21,
+        "anomaly_type": "FOREIGN_CURRENCY",
+        "description": "USD 84 converted to INR 7724.64 using rate USD/INR = 91.96 on 2026-03-10.",
+        "raw_row_data": {
+          "date": "10-03-2026",
+          "notes": "",
+          "amount": "84",
+          "paid_by": "Rohan",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Beach shack lunch",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 119,
+        "row_number": 22,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '10-03-2026' is ambiguous. Could be 2026-03-10 (DD-MM) or 2026-10-03 (MM-DD). Note on row: 'Rohan and Dev took the bigger ones'",
+        "raw_row_data": {
+          "date": "10-03-2026",
+          "notes": "Rohan and Dev took the bigger ones",
+          "amount": "3600",
+          "paid_by": "Priya",
+          "currency": "INR",
+          "split_type": "share",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Scooter rentals",
+          "split_details": "Aisha 1; Rohan 2; Priya 1; Dev 2"
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-10",
+          "option_b": "2026-10-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-10",
+            "notes": "Rohan and Dev took the bigger ones",
+            "amount": "3600",
+            "paid_by": "Priya",
+            "currency": "INR",
+            "amount_inr": "3600",
+            "split_type": "share",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Scooter rentals",
+            "split_details": "Aisha 1; Rohan 2; Priya 1; Dev 2"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 122,
+        "row_number": 23,
+        "anomaly_type": "UNKNOWN_MEMBER",
+        "description": "Unknown member(s) in split: Dev's friend Kabir. These people are not registered group members. Options: (a) Add as guest, (b) Absorb their share among existing group members.",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "Kabir joined for the day",
+          "amount": "150",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev;Dev's friend Kabir",
+          "description": "Parasailing",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "options": [
+            "add_as_guest",
+            "absorb_share"
+          ],
+          "unknown_names": [
+            "Dev's friend Kabir"
+          ]
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-11",
+            "notes": "Kabir joined for the day",
+            "amount": "150",
+            "paid_by": "Dev",
+            "currency": "USD",
+            "amount_inr": "13810.50",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev;Dev's friend Kabir",
+            "description": "Parasailing",
+            "split_details": "",
+            "exchange_rate_date": "2026-03-11",
+            "exchange_rate_used": "92.07"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 121,
+        "row_number": 23,
+        "anomaly_type": "FOREIGN_CURRENCY",
+        "description": "USD 150 converted to INR 13810.50 using rate USD/INR = 92.07 on 2026-03-11.",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "Kabir joined for the day",
+          "amount": "150",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev;Dev's friend Kabir",
+          "description": "Parasailing",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 120,
+        "row_number": 23,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '11-03-2026' is ambiguous. Could be 2026-03-11 (DD-MM) or 2026-11-03 (MM-DD). Note on row: 'Kabir joined for the day'",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "Kabir joined for the day",
+          "amount": "150",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev;Dev's friend Kabir",
+          "description": "Parasailing",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-11",
+          "option_b": "2026-11-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-11",
+            "notes": "Kabir joined for the day",
+            "amount": "150",
+            "paid_by": "Dev",
+            "currency": "USD",
+            "amount_inr": "13810.50",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev;Dev's friend Kabir",
+            "description": "Parasailing",
+            "split_details": "",
+            "exchange_rate_date": "2026-03-11",
+            "exchange_rate_used": "92.07"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 123,
+        "row_number": 24,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '11-03-2026' is ambiguous. Could be 2026-03-11 (DD-MM) or 2026-11-03 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "",
+          "amount": "2400",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Dinner at Thalassa",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-11",
+          "option_b": "2026-11-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-11",
+            "notes": "",
+            "amount": "2400",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "2400",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Dinner at Thalassa",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 124,
+        "row_number": 24,
+        "anomaly_type": "CONFLICTING_DUPLICATE",
+        "description": "Row 24 ('Dinner at Thalassa', Rs.2400) and row 25 ('Thalassa dinner', Rs.2450) appear to describe the same expense with different amounts. Cannot auto-resolve — please choose.",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "",
+          "amount": "2400",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Dinner at Thalassa",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "row_a": 24,
+          "row_b": 25,
+          "options": [
+            "keep_row_24",
+            "keep_row_25",
+            "keep_both"
+          ],
+          "amount_a": "2400",
+          "amount_b": "2450"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-11",
+            "notes": "",
+            "amount": "2400",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "2400",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Dinner at Thalassa",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 126,
+        "row_number": 25,
+        "anomaly_type": "CONFLICTING_DUPLICATE",
+        "description": "Row 24 ('Dinner at Thalassa', Rs.2400) and row 25 ('Thalassa dinner', Rs.2450) appear to describe the same expense with different amounts. Cannot auto-resolve — please choose.",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "Aisha also logged this I think hers is wrong",
+          "amount": "2450",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Thalassa dinner",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "row_a": 24,
+          "row_b": 25,
+          "options": [
+            "keep_row_24",
+            "keep_row_25",
+            "keep_both"
+          ],
+          "amount_a": "2400",
+          "amount_b": "2450"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-11",
+            "notes": "Aisha also logged this I think hers is wrong",
+            "amount": "2450",
+            "paid_by": "Rohan",
+            "currency": "INR",
+            "amount_inr": "2450",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Thalassa dinner",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 125,
+        "row_number": 25,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '11-03-2026' is ambiguous. Could be 2026-03-11 (DD-MM) or 2026-11-03 (MM-DD). Note on row: 'Aisha also logged this I think hers is wrong'",
+        "raw_row_data": {
+          "date": "11-03-2026",
+          "notes": "Aisha also logged this I think hers is wrong",
+          "amount": "2450",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Thalassa dinner",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-11",
+          "option_b": "2026-11-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-11",
+            "notes": "Aisha also logged this I think hers is wrong",
+            "amount": "2450",
+            "paid_by": "Rohan",
+            "currency": "INR",
+            "amount_inr": "2450",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Thalassa dinner",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 128,
+        "row_number": 26,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '12-03-2026' is ambiguous. Could be 2026-03-12 (DD-MM) or 2026-12-03 (MM-DD). Note on row: 'one slot got cancelled'",
+        "raw_row_data": {
+          "date": "12-03-2026",
+          "notes": "one slot got cancelled",
+          "amount": "-30",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Parasailing refund",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-03-12",
+          "option_b": "2026-12-03"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-12",
+            "notes": "one slot got cancelled",
+            "amount": "-30",
+            "paid_by": "Dev",
+            "currency": "USD",
+            "is_refund": true,
+            "amount_inr": "-2766.30",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Dev",
+            "description": "Parasailing refund",
+            "split_details": "",
+            "exchange_rate_date": "2026-03-12",
+            "exchange_rate_used": "92.21"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 127,
+        "row_number": 26,
+        "anomaly_type": "NEGATIVE_AMOUNT",
+        "description": "Negative amount -30 detected. Treated as refund/credit split among participants.",
+        "raw_row_data": {
+          "date": "12-03-2026",
+          "notes": "one slot got cancelled",
+          "amount": "-30",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Parasailing refund",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 129,
+        "row_number": 26,
+        "anomaly_type": "FOREIGN_CURRENCY",
+        "description": "USD -30 converted to INR -2766.30 using rate USD/INR = 92.21 on 2026-03-12.",
+        "raw_row_data": {
+          "date": "12-03-2026",
+          "notes": "one slot got cancelled",
+          "amount": "-30",
+          "paid_by": "Dev",
+          "currency": "USD",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Parasailing refund",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 131,
+        "row_number": 27,
+        "anomaly_type": "NAME_FUZZY_MATCH",
+        "description": "Payer name 'rohan' did not exactly match any member. Auto-matched to 'Rohan' (fuzzy match >= 60%). Original preserved.",
+        "raw_row_data": {
+          "date": "Mar-14",
+          "notes": "",
+          "amount": "1100",
+          "paid_by": "rohan ",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Airport cab",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 130,
+        "row_number": 27,
+        "anomaly_type": "NONSTANDARD_DATE",
+        "description": "Date 'Mar-14' is non-standard. Auto-parsed as 2026-03-14.",
+        "raw_row_data": {
+          "date": "Mar-14",
+          "notes": "",
+          "amount": "1100",
+          "paid_by": "rohan ",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Dev",
+          "description": "Airport cab",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 132,
+        "row_number": 28,
+        "anomaly_type": "MISSING_CURRENCY",
+        "description": "'Groceries DMart' has no currency. Defaulted to INR. Please confirm.",
+        "raw_row_data": {
+          "date": "15-03-2026",
+          "notes": "forgot to set currency",
+          "amount": "2105",
+          "paid_by": "Priya",
+          "currency": "",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Groceries DMart",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-15",
+            "notes": "forgot to set currency",
+            "amount": "2105",
+            "paid_by": "Priya",
+            "currency": "INR",
+            "amount_inr": "2105",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Groceries DMart",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 133,
+        "row_number": 31,
+        "anomaly_type": "ZERO_AMOUNT",
+        "description": "'Dinner order Swiggy' has Rs.0 amount. Notes say: 'counted twice earlier - fixing later'. Skipped.",
+        "raw_row_data": {
+          "date": "22-03-2026",
+          "notes": "counted twice earlier - fixing later",
+          "amount": "0",
+          "paid_by": "Priya",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Dinner order Swiggy",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "SKIPPED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "skipped",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 134,
+        "row_number": 32,
+        "anomaly_type": "PERCENTAGE_SUM_ERROR",
+        "description": "Percentages sum to 110%, not 100%. Details: 'Aisha 30%; Rohan 30%; Priya 30%; Meera 20%'. Cannot auto-correct — different fixes (scale vs reassign) would produce different results. Manual review required.",
+        "raw_row_data": {
+          "date": "25-03-2026",
+          "notes": "",
+          "amount": "2200",
+          "paid_by": "Meera",
+          "currency": "INR",
+          "split_type": "percentage",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Weekend brunch",
+          "split_details": "Aisha 30%; Rohan 30%; Priya 30%; Meera 20%"
+        },
+        "suggested_fix": {
+          "options": [
+            "scale_to_100",
+            "manual_edit"
+          ],
+          "current_sum": 110,
+          "raw_details": "Aisha 30%; Rohan 30%; Priya 30%; Meera 20%"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-03-25",
+            "notes": "",
+            "amount": "2200",
+            "paid_by": "Meera",
+            "currency": "INR",
+            "amount_inr": "2200",
+            "split_type": "percentage",
+            "split_with": "Aisha;Rohan;Priya;Meera",
+            "description": "Weekend brunch",
+            "split_details": "Aisha 30%; Rohan 30%; Priya 30%; Meera 20%"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 135,
+        "row_number": 34,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '04-05-2026' is ambiguous. Could be 2026-05-04 (DD-MM) or 2026-04-05 (MM-DD). Note on row: 'is this April 5 or May 4? format is a mess'",
+        "raw_row_data": {
+          "date": "04-05-2026",
+          "notes": "is this April 5 or May 4? format is a mess",
+          "amount": "2500",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya",
+          "description": "Deep cleaning service",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-05-04",
+          "option_b": "2026-04-05"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-05-04",
+            "notes": "is this April 5 or May 4? format is a mess",
+            "amount": "2500",
+            "paid_by": "Rohan",
+            "currency": "INR",
+            "amount_inr": "2500",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya",
+            "description": "Deep cleaning service",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 136,
+        "row_number": 35,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '01-04-2026' is ambiguous. Could be 2026-04-01 (DD-MM) or 2026-01-04 (MM-DD). Note on row: 'Aisha took Meera's room too'",
+        "raw_row_data": {
+          "date": "01-04-2026",
+          "notes": "Aisha took Meera's room too",
+          "amount": "48000",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "share",
+          "split_with": "Aisha;Rohan;Priya",
+          "description": "April rent",
+          "split_details": "Aisha 2; Rohan 1; Priya 1"
+        },
+        "suggested_fix": {
+          "option_a": "2026-04-01",
+          "option_b": "2026-01-04"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-01",
+            "notes": "Aisha took Meera's room too",
+            "amount": "48000",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "48000",
+            "split_type": "share",
+            "split_with": "Aisha;Rohan;Priya",
+            "description": "April rent",
+            "split_details": "Aisha 2; Rohan 1; Priya 1"
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 137,
+        "row_number": 36,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '02-04-2026' is ambiguous. Could be 2026-04-02 (DD-MM) or 2026-02-04 (MM-DD). Note on row: 'oops Meera still in the group list'",
+        "raw_row_data": {
+          "date": "02-04-2026",
+          "notes": "oops Meera still in the group list",
+          "amount": "2640",
+          "paid_by": "Priya",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Groceries BigBasket",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-04-02",
+          "option_b": "2026-02-04"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-02",
+            "notes": "oops Meera still in the group list",
+            "amount": "2640",
+            "paid_by": "Priya",
+            "currency": "INR",
+            "amount_inr": "2640",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya",
+            "description": "Groceries BigBasket",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 138,
+        "row_number": 36,
+        "anomaly_type": "MEMBER_POST_DEPARTURE",
+        "description": "Expense dated 2026-04-02 includes Meera who had already left the group. Auto-removed from split. Shares recalculated among remaining: Aisha, Rohan, Priya.",
+        "raw_row_data": {
+          "date": "02-04-2026",
+          "notes": "oops Meera still in the group list",
+          "amount": "2640",
+          "paid_by": "Priya",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Meera",
+          "description": "Groceries BigBasket",
+          "split_details": ""
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-02",
+            "notes": "oops Meera still in the group list",
+            "amount": "2640",
+            "paid_by": "Priya",
+            "currency": "INR",
+            "amount_inr": "2640",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya",
+            "description": "Groceries BigBasket",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 139,
+        "row_number": 37,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '05-04-2026' is ambiguous. Could be 2026-04-05 (DD-MM) or 2026-05-04 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "05-04-2026",
+          "notes": "",
+          "amount": "1199",
+          "paid_by": "Rohan",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya",
+          "description": "Wifi bill Apr",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-04-05",
+          "option_b": "2026-05-04"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-05",
+            "notes": "",
+            "amount": "1199",
+            "paid_by": "Rohan",
+            "currency": "INR",
+            "amount_inr": "1199",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya",
+            "description": "Wifi bill Apr",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 140,
+        "row_number": 38,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '08-04-2026' is ambiguous. Could be 2026-04-08 (DD-MM) or 2026-08-04 (MM-DD). Note on row: 'Sam moving in! paid Aisha his deposit'",
+        "raw_row_data": {
+          "date": "08-04-2026",
+          "notes": "Sam moving in! paid Aisha his deposit",
+          "amount": "15000",
+          "paid_by": "Sam",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha",
+          "description": "Sam deposit share",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-04-08",
+          "option_b": "2026-08-04"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-08",
+            "notes": "Sam moving in! paid Aisha his deposit",
+            "amount": "15000",
+            "paid_by": "Sam",
+            "currency": "INR",
+            "amount_inr": "15000",
+            "split_type": "equal",
+            "split_with": "Aisha",
+            "description": "Sam deposit share",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 141,
+        "row_number": 38,
+        "anomaly_type": "SETTLEMENT_PATTERN",
+        "description": "'Sam deposit share' appears to be a settlement/payment, not a shared expense. Will import as Settlement record, not Expense.",
+        "raw_row_data": {
+          "date": "08-04-2026",
+          "notes": "Sam moving in! paid Aisha his deposit",
+          "amount": "15000",
+          "paid_by": "Sam",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha",
+          "description": "Sam deposit share",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "import_as": "settlement"
+        },
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 142,
+        "row_number": 39,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '10-04-2026' is ambiguous. Could be 2026-04-10 (DD-MM) or 2026-10-04 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "10-04-2026",
+          "notes": "",
+          "amount": "3100",
+          "paid_by": "Sam",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Sam",
+          "description": "Housewarming drinks",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-04-10",
+          "option_b": "2026-10-04"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-10",
+            "notes": "",
+            "amount": "3100",
+            "paid_by": "Sam",
+            "currency": "INR",
+            "amount_inr": "3100",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Sam",
+            "description": "Housewarming drinks",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 143,
+        "row_number": 40,
+        "anomaly_type": "AMBIGUOUS_DATE",
+        "description": "Date '12-04-2026' is ambiguous. Could be 2026-04-12 (DD-MM) or 2026-12-04 (MM-DD). Note on row: ''",
+        "raw_row_data": {
+          "date": "12-04-2026",
+          "notes": "",
+          "amount": "1380",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Sam",
+          "description": "Electricity Apr",
+          "split_details": ""
+        },
+        "suggested_fix": {
+          "option_a": "2026-04-12",
+          "option_b": "2026-12-04"
+        },
+        "action_taken": "PENDING_USER",
+        "requires_user_approval": true,
+        "resolved": false,
+        "resolution_choice": "",
+        "resolution_value": {
+          "clean_row": {
+            "date": "2026-04-12",
+            "notes": "",
+            "amount": "1380",
+            "paid_by": "Aisha",
+            "currency": "INR",
+            "amount_inr": "1380",
+            "split_type": "equal",
+            "split_with": "Aisha;Rohan;Priya;Sam",
+            "description": "Electricity Apr",
+            "split_details": ""
+          },
+          "row_status": "REQUIRES_APPROVAL"
+        },
+        "resolved_by": null,
+        "resolved_at": null
+      },
+      {
+        "id": 144,
+        "row_number": 42,
+        "anomaly_type": "SPLIT_TYPE_CONFLICT",
+        "description": "split_type is 'equal' but split_details 'Aisha 1; Rohan 1; Priya 1; Sam 1' are also provided. Equal split takes precedence. Details ignored.",
+        "raw_row_data": {
+          "date": "18-04-2026",
+          "notes": "split_type says equal but someone added shares anyway",
+          "amount": "12000",
+          "paid_by": "Aisha",
+          "currency": "INR",
+          "split_type": "equal",
+          "split_with": "Aisha;Rohan;Priya;Sam",
+          "description": "Furniture for common room",
+          "split_details": "Aisha 1; Rohan 1; Priya 1; Sam 1"
+        },
+        "suggested_fix": null,
+        "action_taken": "AUTO_FIXED",
+        "requires_user_approval": false,
+        "resolved": true,
+        "resolution_choice": "auto_fixed",
+        "resolution_value": null,
+        "resolved_by": null,
+        "resolved_at": null
+      }
+    ]
+  },
+  "imported_expenses": {
+    "total": 12,
+    "items": [
+      {
+        "id": 36,
+        "row_number": 43,
+        "description": "Maid salary Apr",
+        "expense_date": "2026-04-20",
+        "paid_by": "Priya",
+        "total_amount": 3000,
+        "currency": "INR",
+        "amount_inr": 3000,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 750
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 750
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 750
+          },
+          {
+            "user": "Sam",
+            "amount_owed": 750
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "row_number": 42,
+        "description": "Furniture for common room",
+        "expense_date": "2026-04-18",
+        "paid_by": "Aisha",
+        "total_amount": 12000,
+        "currency": "INR",
+        "amount_inr": 12000,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 3000
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 3000
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 3000
+          },
+          {
+            "user": "Sam",
+            "amount_owed": 3000
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "row_number": 41,
+        "description": "Groceries DMart",
+        "expense_date": "2026-04-15",
+        "paid_by": "Sam",
+        "total_amount": 1990,
+        "currency": "INR",
+        "amount_inr": 1990,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 497.5
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 497.5
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 497.5
+          },
+          {
+            "user": "Sam",
+            "amount_owed": 497.5
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "row_number": 33,
+        "description": "Meera farewell dinner",
+        "expense_date": "2026-03-28",
+        "paid_by": "Aisha",
+        "total_amount": 4800,
+        "currency": "INR",
+        "amount_inr": 4800,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 1200
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 1200
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 1200
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 1200
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "row_number": 30,
+        "description": "Maid salary Mar",
+        "expense_date": "2026-03-20",
+        "paid_by": "Meera",
+        "total_amount": 3000,
+        "currency": "INR",
+        "amount_inr": 3000,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 750
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 750
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 750
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 750
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "row_number": 29,
+        "description": "Electricity Mar",
+        "expense_date": "2026-03-18",
+        "paid_by": "Aisha",
+        "total_amount": 1450,
+        "currency": "INR",
+        "amount_inr": 1450,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 362.5
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 362.5
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 362.5
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 362.5
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "row_number": 27,
+        "description": "Airport cab",
+        "expense_date": "2026-03-14",
+        "paid_by": "Rohan",
+        "total_amount": 1100,
+        "currency": "INR",
+        "amount_inr": 1100,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 275
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 275
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 275
+          },
+          {
+            "user": "Dev",
+            "amount_owed": 275
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "row_number": 17,
+        "description": "Groceries BigBasket",
+        "expense_date": "2026-03-03",
+        "paid_by": "Meera",
+        "total_amount": 2810,
+        "currency": "INR",
+        "amount_inr": 2810,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 702.5
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 702.5
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 702.5
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 702.5
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "row_number": 12,
+        "description": "Aisha birthday cake",
+        "expense_date": "2026-02-20",
+        "paid_by": "Rohan",
+        "total_amount": 1500,
+        "currency": "INR",
+        "amount_inr": 1500,
+        "split_type": "unequal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Rohan",
+            "amount_owed": 700
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 400
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 400
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "row_number": 11,
+        "description": "Groceries DMart",
+        "expense_date": "2026-02-18",
+        "paid_by": "Priya",
+        "total_amount": 1875,
+        "currency": "INR",
+        "amount_inr": 1875,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 468.75
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 468.75
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 468.75
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 468.75
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "row_number": 10,
+        "description": "Cylinder refill",
+        "expense_date": "2026-02-15",
+        "paid_by": "Rohan",
+        "total_amount": 900,
+        "currency": "INR",
+        "amount_inr": 900,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 225
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 225
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 225
+          },
+          {
+            "user": "Meera",
+            "amount_owed": 225
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "row_number": 9,
+        "description": "Movie night snacks",
+        "expense_date": "2026-02-14",
+        "paid_by": "Priya",
+        "total_amount": 640,
+        "currency": "INR",
+        "amount_inr": 640,
+        "split_type": "equal",
+        "is_refund": false,
+        "is_settlement": false,
+        "splits": [
+          {
+            "user": "Aisha",
+            "amount_owed": 213.33
+          },
+          {
+            "user": "Rohan",
+            "amount_owed": 213.33
+          },
+          {
+            "user": "Priya",
+            "amount_owed": 213.34
+          }
+        ]
+      }
+    ]
+  },
+  "imported_settlements": {
+    "total": 3,
+    "items": [
+      {
+        "id": 3,
+        "row_number": 14,
+        "paid_by": "Rohan",
+        "paid_to": "Aisha",
+        "amount": 5000,
+        "amount_inr": 5000,
+        "currency": "INR"
+      },
+      {
+        "id": 2,
+        "row_number": 14,
+        "paid_by": "Rohan",
+        "paid_to": "Aisha",
+        "amount": 5000,
+        "amount_inr": 5000,
+        "currency": "INR"
+      },
+      {
+        "id": 1,
+        "row_number": 14,
+        "paid_by": "Rohan",
+        "paid_to": "Aisha",
+        "amount": 5000,
+        "amount_inr": 5000,
+        "currency": "INR"
+      }
+    ]
+  }
+}
